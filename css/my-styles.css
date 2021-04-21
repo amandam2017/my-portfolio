@@ -1,0 +1,13 @@
+.inner__container{
+    width:60%;
+    margin: 0 auto;
+    background-color: red;;
+}
+
+.first-slide--img img{
+    width:100%;
+}
+
+h2{
+    text-align: center;
+}
