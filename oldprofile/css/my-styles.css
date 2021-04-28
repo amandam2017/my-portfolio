@@ -1,0 +1,72 @@
+/* NAV STYLES */
+.crumb-menu li{
+    display:inline-block;
+        background-color:green;
+    }
+    .crumb-menu li a{
+    display:block;
+        text-decoration:none;
+        background-color:yellow;
+        padding: 15px;
+        cursor:pointer;
+        text-align:center;
+        width:100px;
+        position:relative;
+    }
+    
+    .crumb-menu li a:after {
+    content: "";  
+    border-top: 23px solid blue;
+    border-bottom: 25px solid blue;
+    border-left: 25px solid transparent;
+    position: absolute; right: 0px; top: 0;
+    }
+    .crumb-menu li a:before {
+    content: "";  
+    border-top: 23px solid grey;
+    border-bottom: 25px solid grey;
+    border-right: 25px solid transparent;
+    position: absolute; left: 0px; top: 0;
+    }
+    
+    .crumb-menu li:first-child a {
+    border-top-left-radius: 10px; border-bottom-left-radius: 10px;
+    }
+
+    /* removing menu from top */
+    /* .menu__container{
+        position: relative;
+    }
+    .menu__container .navbar-wrapper {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 20;
+    } */
+
+    nav{
+        display: inline-block;
+    }
+
+
+.inner__container{
+    width:60%;
+    margin: 0 auto;
+    background-color: red;;
+}
+
+.first-slide--img img{
+    width:100%;
+}
+
+.marketing h2{
+    text-align: center;
+    display: block;
+}
+
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+    .marketing h2{
+        display: block;
+    }
+} */

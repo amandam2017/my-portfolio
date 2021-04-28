@@ -1,20 +1,68 @@
-.inner__container{
-    width:60%;
-    margin: 0 auto;
-    background-color: red;;
-}
-
-.first-slide--img img{
+body{
     width:100%;
+    margin:0;
+    padding: 0;
+    /* background-color: #5d4b56; */
 }
 
-.marketing h2{
-    text-align: center;
-    display: block;
+/*****************menu styles***********/
+
+#main_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
 }
 
-/* @media (min-width: 768px) and (max-width: 991.98px) {
-    .marketing h2{
-        display: block;
-    }
+/* .breadcrumbs > a#menu_home > .zmdi-home {
+    color: #FC6767;
 } */
+
+.breadcrumbs a {
+    position: relative;
+    float: left;
+    padding-left: 60px;
+    padding-right: 10px;
+    text-decoration: none;
+    line-height: 40px;
+    color: #BFC2C7;
+    font-family: 'Roboto', sans-serif;
+    background-color:#0f170aeb;
+    transition: background-color 0.1s;
+}
+
+.breadcrumbs a:first-child {
+    padding-left: 20px;
+}
+
+.breadcrumbs a::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: -19px;
+    z-index: 1;
+    width: 38px;
+    height: 38px;
+    background-color: #0f170aeb;
+    border-radius: 50px 0 0 0;
+    transform: rotate(-45deg) scale(0.73);
+}
+
+.breadcrumbs a:not(:first-child):hover,
+.breadcrumbs a:not(:first-child).active {
+    background: transparent linear-gradient(90deg, #a5939e 0%, #5d4b56 100%)
+}
+
+.breadcrumbs a:not(:first-child):hover::after,
+.breadcrumbs a:not(:first-child).active::after {
+    background-color: #c7bdbd;
+}
+
+/* ----- Contenu des différents batchs ----- */
+
+#batch_more_content {
+    margin-top: 20px;
+}
+
+.none {
+    display: none;
+}
